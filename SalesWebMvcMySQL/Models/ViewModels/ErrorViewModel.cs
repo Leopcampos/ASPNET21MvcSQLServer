@@ -1,5 +1,3 @@
-using System;
-
 namespace SalesWebMvcMySQL.Models
 {
     public class ErrorViewModel
