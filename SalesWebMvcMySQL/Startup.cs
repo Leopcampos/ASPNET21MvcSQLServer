@@ -37,7 +37,7 @@ namespace SalesWebMvcMySQL
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWebMvcMySQLContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMvcMySQLContext")));
+                    options.UseSqlServer("Data Source=localhost; Database=ASPNET21MvcSQLServer; Integrated Security=false; user id=sa; password=123@Mudar"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
